@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow: hidden;
+    width: 1200px;
+    height: 768px;
+}
+
+div#container {
+    position: relative;
+    width: 100%;
+}
+
+img {
+    position: absolute;
+}
+
+img#donkey {
+    left: 11.8%;
+    top: 75.1%;
+    width: 7.3%;
+    height: 8.5%;
+    z-index: 2;
+}
+
+img#children {
+    left: 84.6%;
+    top: 49.2%;
+    width: 3.7%;
+    height: 9.2%;
+}
+
+img#purple_woman {
+    left: 78.5%;
+    top: 44%;
+    width: 6.1%;
+    height: 16.2%;
+}
+
+img#man {
+    left: 6.1%;
+    top: 62.8%;
+    width: 6.5%;
+    height: 22.8%;
+}
+
+img#white_woman {
+    left: 88.2%;
+    top: 47.8%;
+    width: 11.1%;
+    height: 15.7%;
+    z-index: 2;
+}
+
+img#smoke {
+    left: 19.9%;
+    top: 78.3%;
+    width: 5.1%;
+    height: 6.4%;
+}
+
+img#camel1 {
+    left: 1.7%;
+    top: 50.7%;
+    width: 9.8%;
+    height: 11.4%;
+}
+
+img#camel2 {
+    left: 26.8%;
+    top: 36.4%;
+    width: 5.1%;
+    height: 5.6%;
+    z-index: 2;
+}
+
+img#camel3 {
+    left: 20.9%;
+    top: 37.4%;
+    width: 4.1%;
+    height: 4.5%;
+    z-index: 2;
+}
+
+img#camel4 {
+    left: 18.2%;
+    top: 36.4%;
+    width: 3.8%;
+    height: 4.4%;
+    z-index: 2;
+}
+
+img#camel5 {
+    left: 13%;
+    top: 37.1%;
+    width: 3.6%;
+    height: 4%;
+    z-index: 2;
+}
+
+img#goat {
+    left: 10.5%;
+    top: 74%;
+    width: 4.8%;
+    height: 5.1%;
+}
+
+img#bowl {
+    left: 87.1%;
+    top: 55.4%;
+    width: 4.3%;
+    height: 8.3%;
+}
+
+img#pot {
+    left: 82.1%;
+    top: 56%;
+    width: 4%;
+    height: 4.4%;
+}
+
+img#pink_woman {
+    left: 87.2%;
+    top: 43.3%;
+    width: 7%;
+    height: 15.7%;
+}
+
+img#cloud1 {
+    left: 4.2%;
+    top: 22.2%;
+    width: 6.9%;
+    height: 4.5%;
+    opacity: 0.7;
+}
+
+img#cloud2 {
+    left: 27.2%;
+    top: 21.1%;
+    width: 12%;
+    height: 10.2%;
+    opacity: 0.7;
+    z-index: 2;
+}
+
+img#cloud3 {
+    left: 36.1%;
+    top: 24.8%;
+    width: 7%;
+    height: 6.1%;
+    opacity: 0.7;
+}
+
+img#cloud4 {
+    left: 50.5%;
+    top: 20.7%;
+    width: 13.2%;
+    height: 10.4%;
+    opacity: 0.7;
+}
+
+img#cloud5 {
+    left: 88.4%;
+    top: 21.4%;
+    width: 6.6%;
+    height: 5%;
+    opacity: 0.7;
+}
+
+img#cloud6 {
+    left: 92.2%;
+    top: 20.1%;
+    width: 7.8%;
+    height: 5%;
+    opacity: 0.7;
+}
+
+img#cloud7 {
+    left: 15.8%;
+    top: 11.9%;
+    width: 4.3%;
+    height: 3.3%;
+    opacity: 0.7;
+}
+
+img#cloud8 {
+    left: 57.2%;
+    top: 9.7%;
+    width: 4.8%;
+    height: 3.8%;
+    opacity: 0.7;
+}
+
+img#cloud9 {
+    left: 77.1%;
+    top: 9.9%;
+    width: 4.8%;
+    height: 3.5%;
+    opacity: 0.7;
+}
+
+img#house {
+    left: 7.9%;
+    top: 27.5%;
+    width: 34.8%;
+    height: 12.8%;
+    z-index: 1;
+}
+
+img#desert1 {
+    left: 8.4%;
+    top: 7.2%;
+    width: 91.5%;
+    height: 42.2%;
+}
+
+img#desert2 {
+    left: 0%;
+    top: 0.4%;
+    width: 100%;
+    height: 50%;
+}
+
+a#mainPage {
+    left: 11.4%;
+    top: 68.2%;
+    width: 1.9%;
+    height: 2.3%;
+    position: absolute;
+    z-index: 99;
+}
+
+a#festival_history {
+    left: 76.1%;
+    top: 45.1%;
+    width: 3.3%;
+    height: 4.7%;
+    position: absolute;
+    z-index: 99;
+}
+
+a#festival_clothes {
+    left: 94.7%;
+    top: 65.1%;
+    width: 3.8%;
+    height: 2.5%;
+    position: absolute;
+    z-index: 99;
+}
+
+a#festival_art {
+    left: 20.1%;
+    top: 76.5%;
+    width: 3.8%;
+    height: 3.4%;
+    position: absolute;
+    z-index: 99;
+}
+
+a#festival_activity {
+    left: 7.7%;
+    top: 47.3%;
+    width: 3.6%;
+    height: 4%;
+    position: absolute;
+    z-index: 99;
+}
+
+img#grass {
+    left: 14.4%;
+    top: 50.8%;
+    width: 83.7%;
+    height: 25.2%;
+}
+
+@font-face {
+    font-family: FangzhengSun;
+    src: url('../font/FangzhengSun.ttf') format('truetype');
+}
+
+p#introduction {
+    position: absolute;
+    left: 29.8%;
+    top: 47.7%;
+    width: 550px;
+    height: 300px;
+    font-family: FangzhengSun;
+    font-size: 14px;
+    color: #68401B;
+    background: transparent;
+    border: hidden;
+    overflow-y: scroll;
+}

@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow: hidden;
+    width: 1200px;
+    height: 768px;
+}
+
+div#container {
+    position: relative;
+    width: 100%;
+}
+
+img {
+    position: absolute;
+}
+
+@font-face {
+    font-family: FangzhengSun;
+    src: url('../font/FangzhengSun.ttf') format('truetype');
+}
+
+p#introduction {
+    position: absolute;
+    left: 27.8%;
+    top: 44.7%;
+    width: 550px;
+    height: 250px;
+    font-family: FangzhengSun;
+    font-size: 14px;
+    color: #68401B;
+    background: transparent;
+    border: hidden;
+    overflow-y: scroll;
+}
+
+img#woman {
+    left: 86.1%;
+    top: 58.5%;
+    width: 11.8%;
+    height: 21.5%;
+    z-index: 2;
+}
+
+img#donkey {
+    left: 84.2%;
+    top: 58.5%;
+    width: 6.8%;
+    height: 8.3%;
+    z-index: 2;
+}
+
+img#bull {
+    left: 7.6%;
+    top: 47.3%;
+    width: 8.9%;
+    height: 9.2%;
+    z-index: 2;
+}
+
+img#man {
+    left: 78.3%;
+    top: 30.2%;
+    width: 4.1%;
+    height: 11.5%;
+    z-index: 2;
+}
+
+img#green_bottom {
+    left: 0%;
+    top: 30.4%;
+    width: 100%;
+    height: 69.6%;
+}
+
+img#grass {
+    left: 0%;
+    top: 1.3%;
+    width: 100%;
+    height: 47.3%;
+}
+
+img#sheepGroup1 {
+    left: 16.3%;
+    top: 29.7%;
+    width: 18%;
+    height: 8.7%;
+}
+
+img#sheepGroup2 {
+    left: 66.4%;
+    top: 17.6%;
+    width: 30.1%;
+    height: 36.9%;
+}
+
+img#sheepGroup3 {
+    left: 2.8%;
+    top: 46.5%;
+    width: 5.8%;
+    height: 4.3%;
+}
+
+img#sheep2 {
+    left: 5.8%;
+    top: 46.5%;
+    width: 2.7%;
+    height: 3.3%;
+}
+
+img#sheep5 {
+    left: 69.8%;
+    top: 39.7%;
+    width: 3.5%;
+    height: 4.3%;
+}
+
+img#sheep8 {
+    left: 7.1%;
+    top: 61%;
+    width: 6.4%;
+    height: 7%;
+}
+
+img#sheep10 {
+    left: 2.3%;
+    top: 56.4%;
+    width: 6.1%;
+    height: 7.5%;
+}
+
+img#sheep16 {
+    left: 81.5%;
+    top: 44.7%;
+    width: 6.7%;
+    height: 8.4%;
+}
+
+img#sheep22 {
+    left: 87.9%;
+    top: 41.6%;
+    width: 3.5%;
+    height: 4.2%;
+}
+
+img#sheep23 {
+    left: 85.6%;
+    top: 40.4%;
+    width: 3.7%;
+    height: 4.6%;
+}
+
+img#cloud1 {
+    left: 0.9%;
+    top: 20.2%;
+    width: 7%;
+    height: 4.6%;
+    opacity: 0.7;
+}
+
+img#cloud2 {
+    left: 14.1%;
+    top: 17.2%;
+    width: 13%;
+    height: 8.5%;
+    opacity: 0.7;
+}
+
+img#cloud3 {
+    left: 32.1%;
+    top: 15.3%;
+    width: 12%;
+    height: 10.2%;
+    opacity: 0.7;
+}
+
+img#cloud4 {
+    left: 40.9%;
+    top: 18.6%;
+    width: 7%;
+    height: 6.1%;
+    opacity: 0.7;
+}
+
+img#cloud5 {
+    left: 54.9%;
+    top: 14.8%;
+    width: 10.6%;
+    height: 8.3%;
+    opacity: 0.7;
+}
+
+img#cloud6 {
+    left: 83.1%;
+    top: 15.4%;
+    width: 8.6%;
+    height: 6.5%;
+    opacity: 0.7;
+}
+
+img#cloud7 {
+    left: 88%;
+    top: 12.7%;
+    width: 10.2%;
+    height: 6.5%;
+    opacity: 0.7;
+}
+
+a#mainPage {
+    position: absolute;
+    z-index: 99;
+    left: 79.5%;
+    top: 52.2%;
+    width: 1.9%;
+    height: 2.5%;
+}
+
+a#festival_art {
+    position: absolute;
+    z-index: 99;
+    left: 95.2%;
+    top: 57.9%;
+    width: 3.6%;
+    height: 3.5%;
+}
+
+a#festival_clothes {
+    position: absolute;
+    z-index: 99;
+    left: 12.2%;
+    top: 46.1%;
+    width: 3.8%;
+    height: 2.5%;
+}
+
+a#festival_activity {
+    position: absolute;
+    z-index: 99;
+    left: 9.9%;
+    top: 57.5%;
+    width: 3.6%;
+    height: 4%;
+}
+
+a#festival_custom {
+    position: absolute;
+    z-index: 99;
+    left: 79.4%;
+    top: 26.5%;
+    width: 3.8%;
+    height: 2.3%;
+}
+
+

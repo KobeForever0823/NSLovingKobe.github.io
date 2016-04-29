@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Presentation</title>
+    <link rel="stylesheet" type="text/css" href="../css/presentation.css">
+</head>
+<body>
+    <div id="container">
+        <div class="panel" id="mainPage">
+            <iframe width="100%" height="100%" src="mainPage.html" frameborder="no"
+                    border="0" marginwidth="0" marginheight="0" scrolling="no">
+            </iframe>
+        </div>
+        <div class="panel" id="festival_custom">
+            <iframe width="100%" height="100%" src="festival_custom.html" frameborder="no"
+                    border="0" marginwidth="0" marginheight="0" scrolling="no">
+            </iframe>
+        </div>
+        <div class="panel" id="festival_history">
+            <iframe width="100%" height="100%" src="festival_history.html" frameborder="no"
+                    border="0" marginwidth="0" marginheight="0" scrolling="no">
+            </iframe>
+        </div>
+        <div class="panel" id="festival_activity">
+            <iframe width="100%" height="100%" src="festival_activity.html" frameborder="no"
+                    border="0" marginwidth="0" marginheight="0" scrolling="no">
+            </iframe>
+        </div>
+        <div class="panel" id="festival_art">
+            <iframe width="100%" height="100%" src="festival_art.html" frameborder="no"
+                    border="0" marginwidth="0" marginheight="0" scrolling="no">
+            </iframe>
+        </div>
+        <div class="panel" id="festival_clothes">
+            <iframe width="100%" height="100%" src="festival_clothes.html" frameborder="no"
+                    border="0" marginwidth="0" marginheight="0" scrolling="no">
+            </iframe>
+        </div>
+    </div>
+    <script src="../js/jquery.easing.1.3.js"></script>
+    <script src="../js/jquery.scrollify.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script>
+        $(function() {
+            $('.panel').css({'height': $('#container').height()});
+            $.scrollify({
+                section: '.panel',
+                target: '#container'
+            });
+        });
+    </script>
+</body>
+</html>

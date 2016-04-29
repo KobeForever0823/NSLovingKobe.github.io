@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/festival_history.css">
+    <script src="../js/jquery.min.js"></script>
+    <title>festival_history</title>
+</head>
+<body>
+    <div id="container">
+        <img style="position: static; width: 100%; height: 100%" src="../image/节日史话/节日史话背景.jpg">
+        <a id="mainPage" href="mainPage.html">
+            <img style="width: 100%" src="../image/节日史话/首页.png">
+        </a>
+        <a id="festival_art" href="festival_art.html">
+            <img style="width: 100%" src="../image/节日史话/节日艺术.png">
+        </a>
+        <a id="festival_clothes" href="festival_clothes.html">
+            <img style="width: 100%" src="../image/节日史话/节日服饰.png">
+        </a>
+        <a id="festival_activity" href="festival_activity.html">
+            <img style="width: 100%" src="../image/节日史话/节日活动.png">
+        </a>
+        <a id="festival_custom" href="festival_custom.html">
+            <img style="width: 100%" src="../image/节日史话/节日习俗.png">
+        </a>
+
+        <img id="woman" src="../image/节日史话/妇女.gif">
+        <img id="donkey" src="../image/节日史话/驴.png">
+        <img id="bull" src="../image/节日史话/史话牛.gif">
+        <img id="man" src="../image/节日史话/牧羊人2.gif">
+        <img id="green_bottom" src="../image/节日史话/绿底.png">
+        <img id="grass" src="../image/节日史话/草原.png">
+        <img id="sheepGroup1" src="../image/节日史话/羊组1.png">
+        <img id="sheepGroup2" src="../image/节日史话/羊组2.png">
+        <img id="sheepGroup3" src="../image/节日史话/羊组3.png">
+        <img id="sheep2" src="../image/节日史话/羊2.gif">
+        <img id="sheep5" src="../image/节日史话/羊5.gif">
+        <img id="sheep8" src="../image/节日史话/羊8.gif">
+        <img id="sheep10" src="../image/节日史话/羊10.gif">
+        <img id="sheep16" src="../image/节日史话/羊16.gif">
+        <img id="sheep22" src="../image/节日史话/羊22.gif">
+        <img id="sheep23" src="../image/节日史话/羊23.gif">
+        <img class="cloud" id="cloud1" src="../image/节日史话/云1.png">
+        <img class="cloud" id="cloud2" src="../image/节日史话/云2.png">
+        <img class="cloud" id="cloud3" src="../image/节日史话/云3.png">
+        <img class="cloud" id="cloud4" src="../image/节日史话/云4.png">
+        <img class="cloud" id="cloud5" src="../image/节日史话/云5.png">
+        <img class="cloud" id="cloud6" src="../image/节日史话/云6.png">
+        <img class="cloud" id="cloud7" src="../image/节日史话/云7.png">
+
+        <p id="introduction">
+            <span style="padding-left: 4.5ch">
+                <span style="font-size: 16px">维</span>吾尔族主要聚居在新疆，对他们来说，每年3月20号到22号的诺鲁孜节
+            </span></br>
+            是意义和汉族的春节一样的最重要的节日。</br></br>
+            <span style="padding-left: 4.5ch">
+                <span style="font-size: 16px">诺</span>鲁孜节距今至少已有3千年的历史，内容与汉民族的春节相似。该节日
+            </span></br>
+            形成初期，包括维吾尔族在内的突厥部落的先辈过着游牧生活，他们在晚冬</br>
+            初春把昼夜时差持平之日称之为“日生”、“年头”，并把此日开头的月称</br>
+            之为“羊羔月”。此时正值冰雪消融、草木返青、大地复苏、牲畜产仔的时</br>
+            节，这时牧民们—面兴高采烈欢度节日，一面清点安全越冬的牲畜，准备开</br>
+            始草原放牧。</br></br>
+            <span style="padding-left: 4.5ch">
+                <span style="font-size: 16px">随</span>着以牧转农、定居、城郭进程的发展，该节日增添了更丰富的内容。
+            </span></br>
+            大约在公元前1000年左右，史料上以“九回鹘”记载的西回鹘用塔吉克语称</br>
+            此节为“诺鲁孜节”。随着时间的推移，该节在保留原始面貌的基础上，增</br>
+            添了浓郁的“艺术节”色彩。总之，诺鲁孜节在增进西域和中原间的礼尚往</br>
+            来、加强文化交流，犹其在形成古丝绸之路方面起到了非常重要的作用。</br>
+            改革开放以后，党的民族政策真正落到实处，掀起了整理、拯救、挖掘、</br>
+            继承和发展各民族文化遗产、恢复传统节日的热潮，各县市开始举办诺鲁</br>
+            孜节活动，并用各种形式传到家家户户。</br></br>
+        </p>
+    </div>
+    <script>
+        $(function () {
+            setInterval("floating()", 500);
+        })
+        function floating() {
+            if ($(".cloud").position().left >= (0 - $(".cloud").width())) {
+                $(".cloud").animate({left: "-=0.5px"}, 500);
+            } else {
+                $('.cloud').css("left", "100%");
+            }
+        }
+    </script>
+</body>
+</html>

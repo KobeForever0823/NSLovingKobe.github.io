@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow: hidden;
+    width: 1200px;
+    height: 768px;
+}
+
+div#container {
+    position: relative;
+    width: 100%;
+}
+
+img {
+    position: absolute;
+}
+
+img#grass {
+    left: 0.7%;
+    top: 36.4%;
+    width: 85.9%;
+    height: 38.9%;
+}
+
+img#drum2 {
+    left: 80.7%;
+    top: 54.3%;
+    width: 2.8%;
+    height: 3.8%;
+    z-index: 1;
+}
+
+img#drum1 {
+    left: 14.9%;
+    top: 60.9%;
+    width: 1.9%;
+    height: 3.4%;
+}
+
+img#blue_sit_man {
+    left: 9.9%;
+    top: 73.9%;
+    width: 9.2%;
+    height: 17.1%;
+}
+
+img#blue_stand_man {
+    left: 2.6%;
+    top: 52%;
+    width: 7.6%;
+    height: 17.9%;
+}
+
+img#purple_woman {
+    left: 80.9%;
+    top: 66.9%;
+    width: 10.2%;
+    height: 18.7%;
+}
+
+img#red_woman {
+    left: 88.3%;
+    top: 60.4%;
+    width: 7.9%;
+    height: 18.4%;
+}
+
+img#behind_man {
+    left: 8.3%;
+    top: 60.2%;
+    width: 5.2%;
+    height: 18.9%;
+    z-index: 1;
+}
+
+img#purple_man {
+    left: 91.5%;
+    top: 47.5%;
+    width: 5.8%;
+    height: 14.5%;
+}
+
+img#black_man {
+    left: 86.9%;
+    top: 44.1%;
+    width: 7%;
+    height: 14.6%;
+}
+
+img#blue_man {
+    left: 82.1%;
+    top: 44.4%;
+    width: 4.7%;
+    height: 12.2%;
+}
+
+img#dark_blue {
+    left: 9.8%;
+    top: 53.9%;
+    width: 4.9%;
+    height: 12.9%;
+}
+
+img#house {
+    left: 0%;
+    top: 31.4%;
+    width: 100%;
+    height: 18.2%;
+    z-index: 2;
+}
+
+img#mountain2 {
+    left: 0%;
+    top: -17%;
+    width: 100%;
+    height: 58.3%;
+}
+
+img#mountain {
+    left: 0%;
+    top: 5.6%;
+    width: 19.5%;
+    height: 26.3%;
+}
+
+img#cloud1 {
+    left: 4.6%;
+    top: 23.3%;
+    width: 7%;
+    height: 4.4%;
+    z-index: 2;
+}
+
+img#cloud2 {
+    left: 12.9%;
+    top: 19.4%;
+    width: 13%;
+    height: 8.6%;
+    z-index: 2;
+}
+
+img#cloud6 {
+    left: 86.5%;
+    top: 18.8%;
+    width: 10.2%;
+    height: 6.5%;
+    z-index: 2;
+}
+
+img#cloud5 {
+    left: 80.6%;
+    top: 21.1%;
+    width: 8.6%;
+    height: 6.5%;
+    z-index: 2;
+}
+
+img#cloud4 {
+    left: 45.3%;
+    top: 20.2%;
+    width: 7%;
+    height: 6.1%;
+    z-index: 2;
+}
+
+img#cloud3 {
+    left: 31.9%;
+    top: 17.5%;
+    width: 12%;
+    height: 10.2%;
+    z-index: 2;
+}
+
+img#cloud8 {
+    left: 71.5%;
+    top: 8.2%;
+    width: 5.7%;
+    height: 4.5%;
+    z-index: 2;
+}
+
+img#cloud7 {
+    left: 17%;
+    top: 12.9%;
+    width: 4.1%;
+    height: 2.9%;
+    z-index: 2;
+}
+
+img#cloud9 {
+    left: 79.9%;
+    top: 9.5%;
+    width: 3.7%;
+    height: 2.7%;
+    z-index: 2;
+}
+
+a#mainPage {
+    left: 88.7%;
+    top: 43%;
+    width: 1.9%;
+    height: 2.5%;
+    position: absolute;
+    z-index: 99;
+}
+
+a#festival_clothes {
+    left: 80%;
+    top: 81.1%;
+    width: 3.7%;
+    height: 3.3%;
+    position: absolute;
+    z-index: 99;
+}
+
+a#festival_history {
+    left: 86.5%;
+    top: 64.5%;
+    width: 3.8%;
+    height: 3.9%;
+    position: absolute;
+    z-index: 99;
+}
+
+a#festival_custom {
+    left: 16.6%;
+    top: 78.8%;
+    width: 3.8%;
+    height: 2.3%;
+    position: absolute;
+    z-index: 99;
+}
+
+a#festival_activity {
+    left: 7.5%;
+    top: 48.4%;
+    width: 3.7%;
+    height: 3.9%;
+    position: absolute;
+    z-index: 99;
+}
+
+@font-face {
+    font-family: FangzhengSun;
+    src: url('../font/FangzhengSun.ttf') format('truetype');
+}
+
+p#introduction {
+    position: absolute;
+    left: 29.8%;
+    top: 45.7%;
+    width: 550px;
+    height: 300px;
+    font-family: FangzhengSun;
+    font-size: 14px;
+    color: #68401B;
+    background: transparent;
+    border: hidden;
+    overflow-y: scroll;
+    z-index: 3;
+}
