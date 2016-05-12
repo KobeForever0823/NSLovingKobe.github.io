@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>festival_activity</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../css/festival_activity.css">
 </head>
 <body>
+<title>festival_activity</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../css/festival_activity.css">
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery.mobile-1.4.5.min.js"></script>
     <div id="container">
         <img style="position: static; width: 100%; height: 100%" src="../image/节日活动/节日活动背景.jpg">
-        <img id="woman" src="../image/节日活动/招手女.gif">
-        <img id="red_children" src="../image/节日活动/红孩儿2.gif">
+        <a id="woman">
+            <img style="width: 100%" src="../image/节日活动/招手女.gif">
+        </a>
+        <a id="red_children">
+            <img style="width: 100%" src="../image/节日活动/红孩儿2.gif">
+        </a>
         <img id="table" src="../image/节日活动/桌子.png">
-        <img id="elder" src="../image/节日活动/活动胡子.gif">
+        <a id="elder">
+            <img style="width: 100%" src="../image/节日活动/活动胡子.gif">
+        </a>
         <img id="grape" src="../image/节日活动/散落葡萄.png">
         <img id="basket_grape" src="../image/节日活动/篮子葡萄.png">
-        <img id="purple_woman" src="../image/节日活动/紫裙.gif">
-        <img id="pink_woman" src="../image/节日活动/粉裙.gif">
+        <a id="purple_woman">
+            <img style="width: 100%" src="../image/节日活动/紫裙.gif">
+        </a>
+        <a id="pink_woman">
+            <img style="width: 100%" src="../image/节日活动/粉裙.gif">
+        </a>
         <img id="grapes" src="../image/节日活动/葡萄架.png">
         <img id="lift" src="../image/节日活动/举葡萄.png">
-        <a id="mainPage" href="mainPage.html">
+        <a id="activity_mainPage" href="mainPage.html">
             <img style="width: 100%" src="../image/节日活动/首页.png">
         </a>
-        <a id="festival_art" href="festival_art.html">
+        <a id="activity_festival_art" href="festival_art.html">
             <img style="width: 100%" src="../image/节日活动/节日艺术.png">
         </a>
-        <a id="festival_clothes" href="festival_clothes.html">
+        <a id="activity_festival_clothes" href="festival_clothes.html">
             <img style="width: 100%" src="../image/节日活动/节日服饰.png">
         </a>
-        <a id="festival_history" href="festival_history.html">
+        <a id="activity_festival_history" href="festival_history.html">
             <img style="width: 100%" src="../image/节日活动/节日史话.png">
         </a>
-        <a id="festival_custom" href="festival_custom.html">
+        <a id="activity_festival_custom" href="festival_custom.html">
             <img style="width: 100%" src="../image/节日活动/节日习俗.png">
         </a>
         <img id="fly1" src="../image/节日活动/飘1.gif">
@@ -80,5 +92,41 @@
             花栽树、松土浇水，纪念逝去的亲人。
         </p>
     </div>
+<script>
+    $(document).ready(function() {
+        $("#grapes").animate({top: '0%'}, 3000);
+        setTimeout(function() {
+            $("#woman").animate({left: '4.5%'}, 2000, "swing");
+            $("#red_children").animate({left: '88.9%'}, 2000, "swing");
+            $("#table").animate({left: '1.2%'}, 2000, "swing");
+            $("#elder").animate({left: '11%'}, 2000, "swing");
+            $("#basket_grape").animate({left: '74.7%'}, 2000, "swing");
+            $("#purple_woman").animate({left: '80.1%'}, 2000, "swing");
+            $("#pink_woman").animate({left: '73.8%'}, 2000, "swing");
+            $("#lift").animate({left: '3.1%'}, 2000, "swing");
+            $("#introduction").fadeIn(2000);
+            $("#grape").fadeIn(2000);
+        }, 2000);
+    });
+
+    $(document).ready(function() {
+        $("#woman").bind("tap", function() {
+            $("#activity_festival_history").animate({opacity: "1"}, 1000);
+        })
+
+        $("#pink_woman").bind("tap", function() {
+            $("#activity_festival_custom").animate({opacity: "1"}, 1000);
+        })
+        $("#red_children").bind("tap", function() {
+            $("#activity_festival_art").animate({opacity: "1"}, 1000);
+        })
+        $("#elder").bind("tap", function() {
+            $("#activity_mainPage").animate({opacity: "1"}, 1000);
+        })
+        $("#purple_woman").bind("tap", function() {
+            $("#activity_festival_clothes").animate({opacity: "1"}, 1000);
+        })
+    });
+</script>
 </body>
 </html>

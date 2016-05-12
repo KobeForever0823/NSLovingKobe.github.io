@@ -2,33 +2,82 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../css/festival_history.css">
-    <script src="../js/jquery.min.js"></script>
-    <title>festival_history</title>
 </head>
 <body>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/festival_history.css">
+<title>festival_history</title>
+<script>
+    $(document).ready(function() {
+        $("#sheep8").bind("tap", function() {
+            $("#history_festival_activity").animate({opacity: "1"}, 1000);
+        })
+
+        $("#bull").bind("tap", function() {
+            $("#history_festival_clothes").animate({opacity: "1"}, 1000);
+        })
+        $("#woman").bind("tap", function() {
+            $("#history_festival_art").animate({opacity: "1"}, 1000);
+        })
+        $("#man").bind("tap", function() {
+            $("#history_festival_custom").animate({opacity: "1"}, 1000);
+        })
+        $("#sheep16").bind("tap", function() {
+            $("#history_mainPage").animate({opacity: "1"}, 1000);
+        })
+    });
+
+    $(document).ready(function() {
+        $("#grass").animate({top: '1.3%'}, 3000);
+        $("#green_bottom").animate({top: '30.4%'}, 3000);
+        setTimeout(function() {
+            $("#sheepGroup3").animate({left: '2.8%'}, 2000, "swing");
+            $("#sheep2").animate({left: '5.8%'}, 2000, "swing");
+            $("#sheep8").animate({left: '7.1%'}, 2000, "swing");
+            $("#sheep10").animate({left: '2.3%'}, 2000, "swing");
+            $("#bull").animate({left: '7.6%'}, 2000, "swing");
+            $("#woman").animate({left: '86.1%'}, 2000, "swing");
+            $("#donkey").animate({left: '84.2%'}, 2000, "swing");
+            $("#man").animate({left: '78.3%'}, 2000, "swing");
+            $("#sheepGroup1").animate({left: '16.3%'}, 2000, "swing");
+            $("#sheepGroup2").animate({left: '66.4%'}, 2000, "swing");
+            $("#sheep5").animate({left: '69.8%'}, 2000, "swing");
+            $("#sheep16").animate({left: '81.5%'}, 2000, "swing");
+            $("#sheep22").animate({left: '87.9%'}, 2000, "swing");
+            $("#sheep23").animate({left: '85.6%'}, 2000, "swing");
+            $("#introduction").fadeIn(2000);
+        }, 2000);
+    });
+</script>
     <div id="container">
         <img style="position: static; width: 100%; height: 100%" src="../image/节日史话/节日史话背景.jpg">
         <a id="mainPage" href="mainPage.html">
             <img style="width: 100%" src="../image/节日史话/首页.png">
         </a>
-        <a id="festival_art" href="festival_art.html">
+        <a id="history_festival_art" href="festival_art.html">
             <img style="width: 100%" src="../image/节日史话/节日艺术.png">
         </a>
-        <a id="festival_clothes" href="festival_clothes.html">
+        <a id="history_festival_clothes" href="festival_clothes.html">
             <img style="width: 100%" src="../image/节日史话/节日服饰.png">
         </a>
-        <a id="festival_activity" href="festival_activity.html">
+        <a id="history_festival_activity" href="festival_activity.html">
             <img style="width: 100%" src="../image/节日史话/节日活动.png">
         </a>
-        <a id="festival_custom" href="festival_custom.html">
+        <a id="history_festival_custom" href="festival_custom.html">
             <img style="width: 100%" src="../image/节日史话/节日习俗.png">
         </a>
 
-        <img id="woman" src="../image/节日史话/妇女.gif">
+        <a id="woman">
+            <img style="width: 100%" src="../image/节日史话/妇女.gif">
+        </a>
         <img id="donkey" src="../image/节日史话/驴.png">
-        <img id="bull" src="../image/节日史话/史话牛.gif">
-        <img id="man" src="../image/节日史话/牧羊人2.gif">
+        <a id="bull">
+            <img style="width: 100%" src="../image/节日史话/史话牛.gif">
+        </a>
+        <a id="man">
+            <img style="width: 100%" src="../image/节日史话/牧羊人2.gif">
+        </a>
         <img id="green_bottom" src="../image/节日史话/绿底.png">
         <img id="grass" src="../image/节日史话/草原.png">
         <img id="sheepGroup1" src="../image/节日史话/羊组1.png">
@@ -36,9 +85,13 @@
         <img id="sheepGroup3" src="../image/节日史话/羊组3.png">
         <img id="sheep2" src="../image/节日史话/羊2.gif">
         <img id="sheep5" src="../image/节日史话/羊5.gif">
-        <img id="sheep8" src="../image/节日史话/羊8.gif">
+        <a id="sheep8">
+            <img style="width: 100%" src="../image/节日史话/羊8.gif">
+        </a>
         <img id="sheep10" src="../image/节日史话/羊10.gif">
-        <img id="sheep16" src="../image/节日史话/羊16.gif">
+        <a id="sheep16">
+            <img style="width: 100%" src="../image/节日史话/羊16.gif">
+        </a>
         <img id="sheep22" src="../image/节日史话/羊22.gif">
         <img id="sheep23" src="../image/节日史话/羊23.gif">
         <img class="cloud" id="cloud1" src="../image/节日史话/云1.png">
@@ -79,11 +132,7 @@
             setInterval("floating()", 500);
         })
         function floating() {
-            if ($(".cloud").position().left >= (0 - $(".cloud").width())) {
-                $(".cloud").animate({left: "-=0.5px"}, 500);
-            } else {
-                $('.cloud').css("left", "100%");
-            }
+            $(".cloud").animate({left: "-=0.5px"}, 500);
         }
     </script>
 </body>

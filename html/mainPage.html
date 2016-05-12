@@ -3,29 +3,102 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>Minority</title>
-    <link rel="stylesheet" type="text/css" href="../css/mainPage.css">
+    <!--<link rel="stylesheet" type="text/css" href="../css/jquery.mobile-1.4.5.min.css">-->
     <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.mobile-1.4.5.min.js"></script>
 </head>
 
 <body>
-    <div id="container">
+<link rel="stylesheet" type="text/css" href="../css/mainPage.css">
+<script>
+    $(document).ready(function() {
+        $("#front_mountain").animate({top: '1.4%'}, 3000);
+        $("#middle_mountain").animate({top: '10.2%'}, 3000);
+        $("#behind_mountain").animate({top: '1.3%'}, 3000);
+        setTimeout(function() {
+            $("#left_girl").animate({left: '2.1%'}, 2000, "swing");
+            $("#yellow_girl").animate({left: '6.7%'}, 2000, "swing");
+            $("#purple_girl").animate({left: '6.5%'}, 2000, "swing");
+            $("#left_drum").animate({left: '2.1%'}, 2000, "swing");
+            $("#white_man").animate({left: '9.7%'}, 2000, "swing");
+            $("#blue_man").animate({left: '15.4%'}, 2000, "swing");
+            $("#red_girl").animate({left: '15.2%'}, 2000, "swing");
+            $("#blue_sit_man").animate({left: '22.9%'}, 2000, "swing");
+            $("#behind_man").animate({left: '26.5%'}, 2000, "swing");
+            $("#right_drum").animate({left: '33.4%'}, 2000, "swing");
+            $("#stone").animate({left: '30.3%'}, 2000, "swing");
+            $("#horse_rider").animate({left: '58.8%'}, 2000, "swing");
+            $("#grey_horse").animate({left: '67.3%'}, 2000, "swing");
+            $("#horse").animate({left: '80.7%'}, 2000, "swing");
+            $("#yurt").animate({left: '90.8%'}, 2000, "swing");
+            $("#flag").animate({left: '60.9%'}, 2000, "swing");
+            $("#pink_girl").animate({left: '60.1%'}, 2000, "swing");
+            $("#green_girl").animate({left: '59.9%'}, 2000, "swing");
+            $("#blanket").animate({left: '55.6%'}, 2000, "swing");
+            $("#rightest_drum").animate({left: '68.5%'}, 2000, "swing");
+            $("#green_sit_man").animate({left: '75.2%'}, 2000, "swing");
+            $("#black_man").animate({left: '81.8%'}, 2000, "swing");
+            $("#purple_man").animate({left: '87.7%'}, 2000, "swing");
+        }, 2000);
+    });
+
+    $(document).ready(function() {
+        $("#purple_girl").bind("tap", function() {
+            $("#festival_activity").animate({opacity: "1"}, 1000);
+        })
+
+        $("#blue_man").bind("tap", function() {
+            $("#festival_clothes").animate({opacity: "1"}, 1000);
+        })
+        $("#purple_man").bind("tap", function() {
+            $("#festival_art").animate({opacity: "1"}, 1000);
+        })
+        $("#horse").bind("tap", function() {
+            $("#festival_custom").animate({opacity: "1"}, 1000);
+        })
+        $("#pink_girl").bind("tap", function() {
+            $("#festival_history").animate({opacity: "1"}, 1000);
+        })
+    });
+
+    $(function () {
+        setInterval("floating()", 500);
+    })
+    function floating() {
+        if ($(".cloud").position().left >= 0) {
+            $(".cloud").animate({left: "-=0.5px"}, 500);
+        }
+    }
+</script>
+    <div class="mainPage_container">
         <img style="position: static; width: 100%; height: 100%" src="../image/首页/background.jpg">
 
         <img class="front" id="left_girl" src="../image/首页/最左女.gif">
         <img class="front" id="yellow_girl" src="../image/首页/黄站女.gif">
         <img class="front" id="white_man" src="../image/首页/白衣男.gif">
-        <img class="front" id="blue_man" src="../image/首页/蓝站男.gif">
+        <a id="blue_man">
+            <img class="front" style="width: 100%" src="../image/首页/蓝站男.gif">
+        </a>
         <img class="front" id="red_girl" src="../image/首页/红衣女.gif">
-        <img class="front" id="purple_girl" src="../image/首页/站紫女(1).gif">
+        <a id="purple_girl">
+            <img class="front" style="width: 100%" src="../image/首页/站紫女(1).gif">
+        </a>
         <img class="front" id="behind_man" src="../image/首页/后站男1.gif">
         <img class="front" id="horse_rider" src="../image/首页/骑马男-1.gif">
-        <img class="front" id="horse" src="../image/首页/马1.gif">
+        <a id="horse">
+            <img class="front" style="width: 100%" src="../image/首页/马1.gif">
+        </a>
         <img class="front" id="grey_horse" src="../image/首页/灰马.gif">
         <img class="front" id="green_girl" src="../image/首页/绿女(1).gif">
-        <img class="front" id="pink_girl" src="../image/首页/粉坐女.gif">
+        <a id="pink_girl">
+            <img class="front" style="width: 100%" src="../image/首页/粉坐女.gif">
+        </a>
+
         <img class="front" id="flag" src="../image/首页/旗子1.gif">
         <img class="front" id="green_sit_man" src="../image/首页/绿坐男.gif">
-        <img class="front" id="purple_man" src="../image/首页/紫色衣服.gif">
+        <a id="purple_man">
+            <img class="front" style="width: 100%" src="../image/首页/紫色衣服.gif">
+        </a>
 
         <img class="front" id="blue_sit_man" src="../image/首页/蓝左男.png">
         <img class="front" id="left_drum" src="../image/首页/左鼓.png">
@@ -69,15 +142,6 @@
         <img class="cloud" id="cloud11" src="../image/首页/云11.png">
         <img class="cloud" id="cloud12" src="../image/首页/云12.png">
     </div>
-    <script>
-        $(function () {
-            setInterval("floating()", 500);
-        })
-        function floating() {
-            if ($(".cloud").position().left >= 0) {
-                $(".cloud").animate({left: "-=0.5px"}, 500);
-            }
-        }
-    </script>
+
 </body>
 </html>

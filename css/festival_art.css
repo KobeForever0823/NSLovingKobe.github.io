@@ -23,10 +23,11 @@ img#grass {
     top: 36.4%;
     width: 85.9%;
     height: 38.9%;
+    display: none;
 }
 
 img#drum2 {
-    left: 80.7%;
+    left: 120%;
     top: 54.3%;
     width: 2.8%;
     height: 3.8%;
@@ -34,42 +35,50 @@ img#drum2 {
 }
 
 img#drum1 {
-    left: 14.9%;
+    left: -20%;
     top: 60.9%;
     width: 1.9%;
     height: 3.4%;
 }
 
-img#blue_sit_man {
-    left: 9.9%;
+a#blue_sit_man {
+    position: absolute;
+    left: -20%;
     top: 73.9%;
     width: 9.2%;
     height: 17.1%;
+    z-index: 99;
 }
 
-img#blue_stand_man {
-    left: 2.6%;
+a#blue_stand_man {
+    position: absolute;
+    left: -20%;
     top: 52%;
     width: 7.6%;
     height: 17.9%;
+    z-index: 99;
 }
 
-img#purple_woman {
-    left: 80.9%;
+a#purple_woman {
+    position: absolute;
+    left: 120%;
     top: 66.9%;
     width: 10.2%;
     height: 18.7%;
+    z-index: 99;
 }
 
-img#red_woman {
-    left: 88.3%;
+a#red_woman {
+    position: absolute;
+    left: 120%;
     top: 60.4%;
     width: 7.9%;
     height: 18.4%;
+    z-index: 99;
 }
 
 img#behind_man {
-    left: 8.3%;
+    left: -20%;
     top: 60.2%;
     width: 5.2%;
     height: 18.9%;
@@ -77,28 +86,30 @@ img#behind_man {
 }
 
 img#purple_man {
-    left: 91.5%;
+    left: 120%;
     top: 47.5%;
     width: 5.8%;
     height: 14.5%;
 }
 
-img#black_man {
-    left: 86.9%;
+a#black_man {
+    position: absolute;
+    left: 120%;
     top: 44.1%;
     width: 7%;
     height: 14.6%;
+    z-index: 99;
 }
 
 img#blue_man {
-    left: 82.1%;
+    left: 120%;
     top: 44.4%;
     width: 4.7%;
     height: 12.2%;
 }
 
 img#dark_blue {
-    left: 9.8%;
+    left: -20%;
     top: 53.9%;
     width: 4.9%;
     height: 12.9%;
@@ -110,18 +121,19 @@ img#house {
     width: 100%;
     height: 18.2%;
     z-index: 2;
+    display: none;
 }
 
 img#mountain2 {
     left: 0%;
-    top: -17%;
+    top: -50%;
     width: 100%;
     height: 58.3%;
 }
 
 img#mountain {
     left: 0%;
-    top: 5.6%;
+    top: -20%;
     width: 19.5%;
     height: 26.3%;
 }
@@ -198,49 +210,54 @@ img#cloud9 {
     z-index: 2;
 }
 
-a#mainPage {
+a#art_mainPage {
     left: 88.7%;
     top: 43%;
     width: 1.9%;
     height: 2.5%;
     position: absolute;
     z-index: 99;
+    opacity: 0;
 }
 
-a#festival_clothes {
+a#art_festival_clothes {
     left: 80%;
     top: 81.1%;
     width: 3.7%;
     height: 3.3%;
     position: absolute;
     z-index: 99;
+    opacity: 0;
 }
 
-a#festival_history {
+a#art_festival_history {
     left: 86.5%;
     top: 64.5%;
     width: 3.8%;
     height: 3.9%;
     position: absolute;
     z-index: 99;
+    opacity: 0;
 }
 
-a#festival_custom {
+a#art_festival_custom {
     left: 16.6%;
     top: 78.8%;
     width: 3.8%;
     height: 2.3%;
     position: absolute;
     z-index: 99;
+    opacity: 0;
 }
 
-a#festival_activity {
+a#art_festival_activity {
     left: 7.5%;
     top: 48.4%;
     width: 3.7%;
     height: 3.9%;
     position: absolute;
     z-index: 99;
+    opacity: 0;
 }
 
 @font-face {
@@ -261,4 +278,5 @@ p#introduction {
     border: hidden;
     overflow-y: scroll;
     z-index: 3;
+    display: none;
 }

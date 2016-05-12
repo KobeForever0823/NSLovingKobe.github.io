@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>festival_art</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../css/festival_art.css">
-    <script src="../js/jquery.min.js"></script>
+
 </head>
 <body>
+<meta charset="UTF-8">
+<title>festival_art</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../css/festival_art.css">
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery.mobile-1.4.5.min.js"></script>
     <div id="container">
         <img style="position: static; width: 100%; height: 100%" src="../image/节日艺术/节日艺术背景.jpg">
 
@@ -23,31 +25,41 @@
         <img id="grass" src="../image/节日艺术/草.png">
         <img id="drum1" src="../image/节日艺术/左鼓.png">
         <img id="drum2" src="../image/节日艺术/右鼓.png">
-        <img id="blue_sit_man" src="../image/节日艺术/艺术鼓.gif">
-        <img id="blue_stand_man" src="../image/节日艺术/艺术蓝衣.gif">
-        <img id="purple_woman" src="../image/节日艺术/紫衣艺术.gif">
-        <img id="red_woman" src="../image/节日艺术/红衣艺术.png">
+        <a id="blue_sit_man">
+            <img style="width: 100%" src="../image/节日艺术/艺术鼓.gif">
+        </a>
+        <a id="blue_stand_man">
+            <img style="width: 100%" src="../image/节日艺术/艺术蓝衣.gif">
+        </a>
+        <a id="purple_woman">
+            <img style="width: 100%" src="../image/节日艺术/紫衣艺术.gif">
+        </a>
+        <a id="red_woman">
+            <img style="width: 100%" src="../image/节日艺术/红衣艺术.png">
+        </a>
         <img id="behind_man" src="../image/节日艺术/后站男1.gif">
         <img id="purple_man" src="../image/节日艺术/紫色衣服.gif">
-        <img id="black_man" src="../image/节日艺术/艺术立起来.gif">
+        <a id="black_man">
+            <img style="width: 100%" src="../image/节日艺术/艺术立起来.gif">
+        </a>
         <img id="blue_man" src="../image/节日艺术/鼓后男.png">
         <img id="dark_blue" src="../image/节日艺术/鼓前男.png">
         <img id="house" src="../image/节日艺术/房子.png">
         <img id="mountain" src="../image/节日艺术/雪山.png">
         <img id="mountain2" src="../image/节日艺术/雪山2.png">
-        <a id="mainPage" href="mainPage.html">
+        <a id="art_mainPage" href="mainPage.html">
             <img style="width: 100%" src="../image/节日艺术/首页.png">
         </a>
-        <a id="festival_clothes" href="festival_clothes.html">
+        <a id="art_festival_clothes" href="festival_clothes.html">
             <img style="width: 100%" src="../image/节日艺术/节日服饰.png">
         </a>
-        <a id="festival_history" href="festival_history.html">
+        <a id="art_festival_history" href="festival_history.html">
             <img style="width: 100%" src="../image/节日艺术/节日史话.png">
         </a>
-        <a id="festival_custom" href="festival_custom.html">
+        <a id="art_festival_custom" href="festival_custom.html">
             <img style="width: 100%;" src="../image/节日艺术/节日习俗.png">
         </a>
-        <a id="festival_activity" href="festival_activity.html">
+        <a id="art_festival_activity" href="festival_activity.html">
             <img style="width: 100%" src="../image/节日艺术/节日活动.png">
         </a>
 
@@ -78,15 +90,50 @@
         </p>
     </div>
     <script>
+        $(document).ready(function() {
+            $("#mountain2").animate({top: '-17%'}, 3000);
+            $("#mountain").animate({top: '5.6%'}, 3000);
+            setTimeout(function() {
+                $("#drum2").animate({left: '80.7%'}, 2000, "swing");
+                $("#drum1").animate({left: '14.9%'}, 2000, "swing");
+                $("#blue_sit_man").animate({left: '9.9%'}, 2000, "swing");
+                $("#blue_stand_man").animate({left: '2.6%'}, 2000, "swing");
+                $("#purple_woman").animate({left: '80.9%'}, 2000, "swing");
+                $("#red_woman").animate({left: '88.3%'}, 2000, "swing");
+                $("#behind_man").animate({left: '8.3%'}, 2000, "swing");
+                $("#purple_man").animate({left: '91.5%'}, 2000, "swing");
+                $("#black_man").animate({left: '86.9%'}, 2000, "swing");
+                $("#blue_man").animate({left: '82.1%'}, 2000, "swing");
+                $("#dark_blue").animate({left: '9.8%'}, 2000, "swing");
+                $("#grass").fadeIn(2000);
+                $("#house").fadeIn(2000);
+                $("#introduction").fadeIn(2000);
+            }, 2000);
+        });
+
+        $(document).ready(function() {
+            $("#red_woman").bind("tap", function() {
+                $("#art_festival_history").animate({opacity: "1"}, 1000);
+            })
+
+            $("#blue_sit_man").bind("tap", function() {
+                $("#art_festival_custom").animate({opacity: "1"}, 1000);
+            })
+            $("#blue_stand_man").bind("tap", function() {
+                $("#art_festival_activity").animate({opacity: "1"}, 1000);
+            })
+            $("#black_man").bind("tap", function() {
+                $("#art_mainPage").animate({opacity: "1"}, 1000);
+            })
+            $("#purple_woman").bind("tap", function() {
+                $("#art_festival_clothes").animate({opacity: "1"}, 1000);
+            })
+        });
         $(function () {
             setInterval("floating()", 500);
         })
         function floating() {
-            if ($(".cloud").position().left >= (0 - $(".cloud").width())) {
-                $(".cloud").animate({left: "-=0.5px"}, 500);
-            } else {
-                $('.cloud').css("left", "100%");
-            }
+            $(".cloud").animate({left: "-=0.5px"}, 500);
         }
     </script>
 </body>

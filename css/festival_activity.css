@@ -18,34 +18,39 @@ img {
     position: absolute;
 }
 
-img#woman {
-    left: 4.5%;
+a#woman {
+    position: absolute;
+    left: -20%;
     top: 52.9%;
     width: 11.2%;
     height: 29.1%;
     z-index: 4;
 }
 
-img#red_children {
-    left: 88.9%;
+a#red_children {
+    position: absolute;
+    left: 120%;
     top: 47%;
     width: 6.8%;
     height: 18.2%;
+    z-index: 99;
 }
 
 img#table {
-    left: 1.2%;
+    left: -20%;
     top: 40.3%;
     width: 19.2%;
     height: 15.9%;
     z-index: 3;
 }
 
-img#elder {
-    left: 11%;
+a#elder {
+    position: absolute;
+    left: -20%;
     top: 28.1%;
     width: 10.9%;
     height: 20.2%;
+    z-index: 2;
 }
 
 img#grape {
@@ -53,39 +58,44 @@ img#grape {
     top: 32.4%;
     width: 69.3%;
     height: 29.1%;
+    display: none;
 }
 
 img#basket_grape {
-    left: 74.7%;
+    left: 120%;
     top: 34%;
     width: 5.3%;
     height: 9.5%;
     z-index: 99;
 }
 
-img#purple_woman {
-    left: 80.1%;
+a#purple_woman {
+    position: absolute;
+    left: 120%;
     top: 23%;
     width: 10.7%;
     height: 20.2%;
+    z-index: 2;
 }
 
-img#pink_woman {
-    left: 73.8%;
+a#pink_woman {
+    position: absolute;
+    left: 120%;
     top: 18.5%;
     width: 7.9%;
     height: 19.2%;
+    z-index: 2;
 }
 
 img#grapes {
     left: 0%;
-    top: 0%;
+    top: -30%;
     width: 100%;
     height: 54.1%;
 }
 
 img#lift {
-    left: 3.1%;
+    left: -20%;
     top: 31.2%;
     width: 9.6%;
     height: 13.8%;
@@ -124,49 +134,54 @@ img#fly5 {
     z-index: 99;
 }
 
-a#mainPage {
+a#activity_mainPage {
     position: absolute;
     left: 13.3%;
     top: 30.1%;
     width: 1.9%;
     height: 2.5%;
     z-index: 99;
+    opacity: 0;
 }
 
-a#festival_art {
+a#activity_festival_art {
     position: absolute;
     left: 85.3%;
     top: 51.6%;
     width: 3.6%;
     height: 3.5%;
     z-index: 99;
+    opacity: 0;
 }
 
-a#festival_clothes {
+a#activity_festival_clothes {
     position: absolute;
     left: 88.7%;
     top: 30.3%;
     width: 3.5%;
     height: 4%;
     z-index: 99;
+    opacity: 0;
 }
 
-a#festival_history {
+a#activity_festival_history {
     position: absolute;
     left: 13%;
     top: 59%;
     width: 3.5%;
     height: 4%;
     z-index: 99;
+    opacity: 0;
 }
 
-a#festival_custom {
+a#activity_festival_custom {
     position: absolute;
     left: 79.3%;
     top: 23.2%;
     width: 3.3%;
     height: 4.4%;
     z-index: 99;
+    opacity: 0;
 }
 
 @font-face {
@@ -187,4 +202,5 @@ p#introduction {
     border: hidden;
     overflow-y: scroll;
     z-index: 3;
+    display: none;
 }

@@ -9,7 +9,7 @@ html, body {
     height: 768px;
 }
 
-div#container {
+.mainPage_container {
     position: relative;
     width: 100%;
 }
@@ -18,41 +18,26 @@ img {
     position: absolute;
 }
 
-a {
-    display: inline-block;
-    outline: none;
-    white-space: nowrap;
-}
-
-a::before {
-    transition-delay: 0.3s;
-}
-
-a::after {
-    pointer-events: none;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-font-smoothing: antialiased;
-    box-sizing: border-box;
-}
 
 img#left_girl {
-    left: 2.1%;
+    left: -20%;
     top: 42.1%;
-    z-index: 1;
+    z-index: 4;
     width: 11.9%;
     height: 28.4%;
 }
 
-img#purple_girl {
-    left: 6.5%;
+a#purple_girl {
+    position: absolute;
+    left: -20%;
     top: 33.3%;
     width: 10.4%;
     height: 18.2%;
+    z-index: 3;
 }
 
 img#yellow_girl {
-    left: 6.7%;
+    left: -20%;
     top: 54.6%;
     z-index: 1;
     width: 10.6%;
@@ -60,29 +45,31 @@ img#yellow_girl {
 }
 
 img#left_drum {
-    left: 2.1%;
+    left: -20%;
     top: 63.4%;
     width: 4.2%;
     height: 5.7%;
 }
 
 img#white_man {
-    left: 9.7%;
+    left: -20%;
     top: 40.5%;
     width: 9.8%;
     height: 17.7%;
-    z-index: 1;
+    z-index: 4;
 }
 
-img#blue_man {
-    left: 15.4%;
+a#blue_man {
+    position: absolute;
+    left: -20%;
     top: 60%;
     width: 11.5%;
     height: 23.9%;
+    z-index: 99;
 }
 
 img#red_girl {
-    left: 15.2%;
+    left: -20%;
     top: 36.7%;
     width: 14.5%;
     height: 20.7%;
@@ -90,7 +77,7 @@ img#red_girl {
 }
 
 img#blue_sit_man {
-    left: 22.9%;
+    left: -20%;
     top: 49.8%;
     width: 8.2%;
     height: 16.3%;
@@ -98,14 +85,14 @@ img#blue_sit_man {
 }
 
 img#behind_man {
-    left: 26.5%;
+    left: -20%;
     top: 34.9%;
     width: 6%;
     height: 18.1%;
 }
 
 img#right_drum {
-    left: 33.4%;
+    left: -20%;
     top: 52.4%;
     width: 4.5%;
     height: 7.3%;
@@ -118,6 +105,7 @@ a#festival_activity {
     height: 2.9%;
     position: absolute;
     z-index: 99;
+    opacity: 0;
 }
 
 a#festival_clothes {
@@ -127,11 +115,12 @@ a#festival_clothes {
     height: 3.4%;
     position: absolute;
     z-index: 99;
+    opacity: 0;
 }
 
 img#front_mountain {
     left: 0%;
-    top: 1.4%;
+    top: -10%;
     width: 64.9%;
     height: 40.6%;
     z-index: 1;
@@ -139,7 +128,7 @@ img#front_mountain {
 
 img#middle_mountain {
     left: 53.6%;
-    top: 10.2%;
+    top: -10%;
     z-index: 1;
     width: 46.4%;
     height: 21.5%;
@@ -147,7 +136,7 @@ img#middle_mountain {
 
 img#behind_mountain {
     left: 49.8%;
-    top: 1.3%;
+    top: -10%;
     width: 50.2%;
     height: 28.1%;
 }
@@ -186,6 +175,7 @@ img#cloud5 {
     top: 6.8%;
     width: 2.5%;
     height: 2.3%;
+    z-index: 99;
 }
 
 img#cloud6 {
@@ -193,6 +183,7 @@ img#cloud6 {
     top: 22.7%;
     width: 6.6%;
     height: 4.5%;
+    z-index: 99;
 }
 
 img#cloud7 {
@@ -200,6 +191,7 @@ img#cloud7 {
     top: 18.8%;
     width: 12.94%;
     height: 8.5%;
+    z-index: 99;
 }
 
 img#cloud8 {
@@ -207,6 +199,7 @@ img#cloud8 {
     top: 20.1%;
     width: 12%;
     height: 10.2%;
+    z-index: 99;
 }
 
 img#cloud9 {
@@ -214,6 +207,7 @@ img#cloud9 {
     top: 23.8%;
     width: 7%;
     height: 6.1%;
+    z-index: 99;
 }
 
 img#cloud10 {
@@ -221,6 +215,7 @@ img#cloud10 {
     top: 18.3%;
     width: 13.2%;
     height: 10.4%;
+    z-index: 99;
 }
 
 img#cloud11 {
@@ -228,6 +223,7 @@ img#cloud11 {
     top: 20.5%;
     width: 8.6%;
     height: 6.5%;
+    z-index: 99;
 }
 
 img#cloud12 {
@@ -235,18 +231,19 @@ img#cloud12 {
     top: 18.2%;
     width: 10.2%;
     height: 6.5%;
+    z-index: 99;
 }
 
 
 img#stone {
     width: 29.9%;
     height: 14.9%;
-    left: 30.3%;
+    left: -30%;
     top: 61%;
 }
 
 img#horse_rider {
-    left: 58.8%;
+    left: 110%;
     top: 34%;
     width: 11.2%;
     height: 10.5%;
@@ -255,17 +252,19 @@ img#horse_rider {
 
 
 img#grey_horse {
-    left: 67.3%;
+    left: 110%;
     top: 31%;
     width: 11%;
     height: 14.3%;
 }
 
-img#horse {
-    left: 80.7%;
+a#horse {
+    position: absolute;
+    left: 110%;
     top: 38.2%;
     width: 11.3%;
     height: 10.5%;
+    z-index: 99;
 }
 
 a#festival_custom {
@@ -275,17 +274,18 @@ a#festival_custom {
     width: 3.8%;
     position: absolute;
     z-index: 99;
+    opacity: 0;
 }
 
 img#yurt {
-    left: 90.8%;
+    left: 110%;
     top: 49.1%;
     width: 14.6%;
     height: 18%;
 }
 
 img#flag {
-    left: 60.9%;
+    left: 110%;
     top: 43.5%;
     width: 44%;
     height: 70%;
@@ -293,16 +293,18 @@ img#flag {
     transform: rotate(2deg);
 }
 
-img#pink_girl {
-    left: 60.1%;
+a#pink_girl {
+    position: absolute;
+    left: 110%;
     top: 68.1%;
     z-index: 2;
     width: 11.5%;
     height: 16.6%;
+    z-index: 2;
 }
 
 img#green_girl {
-    left: 59.9%;
+    left: 110%;
     top: 74.6%;
     z-index: 3;
     width: 10.3%;
@@ -310,14 +312,14 @@ img#green_girl {
 }
 
 img#blanket {
-    left: 55.6%;
+    left: 110%;
     top: 75.9%;
     width: 20.6%;
     height: 19.4%;
 }
 
 img#rightest_drum {
-    left: 68.5%;
+    left: 110%;
     top: 76.4%;
     width: 4.9%;
     height: 5.3%;
@@ -325,7 +327,7 @@ img#rightest_drum {
 }
 
 img#green_sit_man {
-    left: 75.2%;
+    left: 110%;
     top: 64.5%;
     width: 8.1%;
     height: 20.7%;
@@ -333,18 +335,20 @@ img#green_sit_man {
 }
 
 img#black_man {
-    left: 81.8%;
+    left: 110%;
     top: 62%;
     width: 9.5%;
     height: 19.5%;
     z-index: 2;
 }
 
-img#purple_man {
-    left: 87.7%;
+a#purple_man {
+    position: absolute;
+    left: 110%;
     top: 70.8%;
     width: 8%;
     height: 19.8%;
+    z-index: 99;
 }
 
 a#festival_history {
@@ -354,6 +358,7 @@ a#festival_history {
     top: 66.3%;
     position: absolute;
     z-index: 99;
+    opacity: 0;
 }
 
 a#festival_art {
@@ -363,6 +368,7 @@ a#festival_art {
     top: 71.1%;
     position: absolute;
     z-index: 99;
+    opacity: 0;
 }
 
 

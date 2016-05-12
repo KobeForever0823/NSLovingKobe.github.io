@@ -19,7 +19,7 @@ img {
 }
 
 img#donkey {
-    left: 11.8%;
+    left: -20%;
     top: 75.1%;
     width: 7.3%;
     height: 8.5%;
@@ -27,50 +27,59 @@ img#donkey {
 }
 
 img#children {
-    left: 84.6%;
+    left: 120%;
     top: 49.2%;
     width: 3.7%;
     height: 9.2%;
 }
 
-img#purple_woman {
-    left: 78.5%;
+a#purple_woman {
+    position: absolute;
+    left: 120%;
     top: 44%;
     width: 6.1%;
     height: 16.2%;
+    z-index: 99;
 }
 
-img#man {
-    left: 6.1%;
+a#man {
+    position: absolute;
+    left: -20%;
     top: 62.8%;
     width: 6.5%;
     height: 22.8%;
+    z-index: 99;
 }
 
-img#white_woman {
-    left: 88.2%;
+a#white_woman {
+    position: absolute;
+    left: 120%;
     top: 47.8%;
     width: 11.1%;
     height: 15.7%;
     z-index: 2;
 }
 
-img#smoke {
-    left: 19.9%;
+a#smoke {
+    position: absolute;
+    left: -20%;
     top: 78.3%;
     width: 5.1%;
     height: 6.4%;
+    z-index: 99;
 }
 
-img#camel1 {
-    left: 1.7%;
+a#camel1 {
+    position: absolute;
+    left: -20%;
     top: 50.7%;
     width: 9.8%;
     height: 11.4%;
+    z-index: 99;
 }
 
 img#camel2 {
-    left: 26.8%;
+    left: -20%;
     top: 36.4%;
     width: 5.1%;
     height: 5.6%;
@@ -78,7 +87,7 @@ img#camel2 {
 }
 
 img#camel3 {
-    left: 20.9%;
+    left: -20%;
     top: 37.4%;
     width: 4.1%;
     height: 4.5%;
@@ -86,7 +95,7 @@ img#camel3 {
 }
 
 img#camel4 {
-    left: 18.2%;
+    left: -20%;
     top: 36.4%;
     width: 3.8%;
     height: 4.4%;
@@ -94,7 +103,7 @@ img#camel4 {
 }
 
 img#camel5 {
-    left: 13%;
+    left: -20%;
     top: 37.1%;
     width: 3.6%;
     height: 4%;
@@ -102,28 +111,28 @@ img#camel5 {
 }
 
 img#goat {
-    left: 10.5%;
+    left: -20%;
     top: 74%;
     width: 4.8%;
     height: 5.1%;
 }
 
 img#bowl {
-    left: 87.1%;
+    left: 120%;
     top: 55.4%;
     width: 4.3%;
     height: 8.3%;
 }
 
 img#pot {
-    left: 82.1%;
+    left: 120%;
     top: 56%;
     width: 4%;
     height: 4.4%;
 }
 
 img#pink_woman {
-    left: 87.2%;
+    left: 120%;
     top: 43.3%;
     width: 7%;
     height: 15.7%;
@@ -203,7 +212,7 @@ img#cloud9 {
 }
 
 img#house {
-    left: 7.9%;
+    left: -40%;
     top: 27.5%;
     width: 34.8%;
     height: 12.8%;
@@ -212,61 +221,66 @@ img#house {
 
 img#desert1 {
     left: 8.4%;
-    top: 7.2%;
+    top: -20%;
     width: 91.5%;
     height: 42.2%;
 }
 
 img#desert2 {
     left: 0%;
-    top: 0.4%;
+    top: -20%;
     width: 100%;
     height: 50%;
 }
 
-a#mainPage {
+a#custom_mainPage {
     left: 11.4%;
     top: 68.2%;
     width: 1.9%;
     height: 2.3%;
     position: absolute;
     z-index: 99;
+    opacity: 0;
 }
 
-a#festival_history {
+a#custom_festival_history {
     left: 76.1%;
     top: 45.1%;
     width: 3.3%;
     height: 4.7%;
     position: absolute;
     z-index: 99;
+    opacity: 0;
 }
 
-a#festival_clothes {
+a#custom_festival_clothes {
     left: 94.7%;
     top: 65.1%;
     width: 3.8%;
     height: 2.5%;
     position: absolute;
     z-index: 99;
+    opacity: 0;
 }
 
-a#festival_art {
+a#custom_festival_art {
     left: 20.1%;
     top: 76.5%;
     width: 3.8%;
     height: 3.4%;
     position: absolute;
     z-index: 99;
+    opacity: 0;
 }
 
-a#festival_activity {
+a#custom_festival_activity {
     left: 7.7%;
     top: 47.3%;
     width: 3.6%;
     height: 4%;
     position: absolute;
     z-index: 99;
+    opacity: 0;
 }
 
 img#grass {
@@ -274,6 +288,7 @@ img#grass {
     top: 50.8%;
     width: 83.7%;
     height: 25.2%;
+    display: none;
 }
 
 @font-face {
@@ -293,4 +308,5 @@ p#introduction {
     background: transparent;
     border: hidden;
     overflow-y: scroll;
+    display: none;
 }

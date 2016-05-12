@@ -1,22 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>festivalCustom</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../css/festival_custom.css">
-    <script src="../js/jquery.min.js"></script>
+
 </head>
 <body>
+<title>festivalCustom</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../css/festival_custom.css">
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery.mobile-1.4.5.min.js"></script>
     <div id="container">
         <img style="position: static; width: 100%; height: 100%" src="../image/节日习俗/节日习俗背景.jpg">
 
-        <img id="man" src="../image/节日习俗/牧人(改）.gif">
+        <a id="man">
+            <img style="width: 100%" src="../image/节日习俗/牧人(改）.gif">
+        </a>
         <img id="donkey" src="../image/节日习俗/驴（改）.gif">
-        <img id="smoke" src="../image/节日习俗/冒烟.gif">
+        <a id="smoke">
+            <img style="width: 100%" src="../image/节日习俗/冒烟.gif">
+        </a>
         <img id="children" src="../image/节日习俗/小孩(改）.gif">
-        <img id="purple_woman" src="../image/节日习俗/深紫（改）.gif">
-        <img id="white_woman" src="../image/节日习俗/白裙(改）.gif">
-        <img id="camel1" src="../image/节日习俗/骆驼1（改）.gif">
+        <a id="purple_woman">
+            <img style="width: 100%" src="../image/节日习俗/深紫（改）.gif">
+        </a>
+        <a id="white_woman">
+            <img style="width: 100%" src="../image/节日习俗/白裙(改）.gif">
+        </a>
+        <a id="camel1">
+            <img style="width: 100%" src="../image/节日习俗/骆驼1（改）.gif">
+        </a>
         <img id="camel2" src="../image/节日习俗/骆驼2(改）.gif">
 
         <img id="camel3" src="../image/节日习俗/骆驼3.png">
@@ -30,19 +42,19 @@
         <img id="pot" src="../image/节日习俗/锅.png">
         <img id="bowl" src="../image/节日习俗/碗.png">
         <img id="pink_woman" src="../image/节日习俗/粉头巾.png">
-        <a id="mainPage" href="mainPage.html">
+        <a id="custom_mainPage" href="mainPage.html">
             <img style="width: 100%" src="../image/节日习俗/首页.png">
         </a>
-        <a id="festival_activity" href="festival_activity.html">
+        <a id="custom_festival_activity" href="festival_activity.html">
             <img style="width: 100%" src="../image/节日习俗/节日活动.png">
         </a>
-        <a id="festival_history" href="festival_history.html">
+        <a id="custom_festival_history" href="festival_history.html">
             <img style="width: 100%" src="../image/节日习俗/节日史话.png">
         </a>
-        <a id="festival_clothes" href="festival_clothes.html">
+        <a id="custom_festival_clothes" href="festival_clothes.html">
             <img style="width: 100%" src="../image/节日习俗/节日服饰.png">
         </a>
-        <a id="festival_art" href="festival_art.html">
+        <a id="custom_festival_art" href="festival_art.html">
             <img style="width: 100%;" src="../image/节日习俗/节日艺术.png">
         </a>
         <img class="cloud" id="cloud1" src="../image/节日习俗/云1.png">
@@ -82,15 +94,54 @@
         </p>
     </div>
     <script>
+        $(document).ready(function() {
+            $("#desert1").animate({top: '7.2%'}, 3000);
+            $("#desert2").animate({top: '0.4%'}, 3000);
+            setTimeout(function() {
+                $("#donkey").animate({left: '11.8%'}, 2000, "swing");
+                $("#children").animate({left: '84.6%'}, 2000, "swing");
+                $("#purple_woman").animate({left: '78.5%'}, 2000, "swing");
+                $("#man").animate({left: '6.1%'}, 2000, "swing");
+                $("#white_woman").animate({left: '88.2%'}, 2000, "swing");
+                $("#smoke").animate({left: '19.9%'}, 2000, "swing");
+                $("#camel1").animate({left: '1.7%'}, 2000, "swing");
+                $("#camel2").animate({left: '26.8%'}, 2000, "swing");
+                $("#camel3").animate({left: '20.9%'}, 2000, "swing");
+                $("#camel4").animate({left: '18.2%'}, 2000, "swing");
+                $("#camel5").animate({left: '13%'}, 2000, "swing");
+                $("#goat").animate({left: '10.5%'}, 2000, "swing");
+                $("#bowl").animate({left: '87.1%'}, 2000, "swing");
+                $("#pot").animate({left: '82.1%'}, 2000, "swing");
+                $("#pink_woman").animate({left: '87.2%'}, 2000, "swing");
+                $("#house").animate({left: '7.9%'}, 2000, "swing");
+                $("#grass").fadeIn(2000);
+                $("#introduction").fadeIn(2000);
+            }, 2000);
+        });
+
+        $(document).ready(function() {
+            $("#camel1").bind("tap", function() {
+                $("#custom_festival_activity").animate({opacity: "1"}, 1000);
+            })
+
+            $("#white_woman").bind("tap", function() {
+                $("#custom_festival_clothes").animate({opacity: "1"}, 1000);
+            })
+            $("#smoke").bind("tap", function() {
+                $("#custom_festival_art").animate({opacity: "1"}, 1000);
+            })
+            $("#purple_woman").bind("tap", function() {
+                $("#custom_festival_history").animate({opacity: "1"}, 1000);
+            })
+            $("#man").bind("tap", function() {
+                $("#custom_mainPage").animate({opacity: "1"}, 1000);
+            })
+        });
         $(function () {
             setInterval("floating()", 500);
         })
         function floating() {
-            if ($(".cloud").position().left >= (0 - $(".cloud").width())) {
-                $(".cloud").animate({left: "-=0.5px"}, 500);
-            } else {
-                $('.cloud').css("left", "100%");
-            }
+            $(".cloud").animate({left: "-=0.5px"}, 500);
         }
     </script>
 </body>
